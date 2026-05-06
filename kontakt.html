@@ -5,27 +5,82 @@
     <title>Kontakt</title>
 </head>
 <body>
-
 <header>
-    <h1>Kontakt</h1>
+    <h1>Formularz kontaktowy</h1>
 </header>
-
 <main>
-    <p>Napisz do mnie:</p>
+<form>
     <p>
-        <a href="mailto:mikolajn920@gmail.com">
-            mikolajn920@gmail.com
-        </a>
+        <label for="imie">Imię i nazwisko:</label><br>
+        <input type="text" id="imie" name="imie" placeholder="Wpisz imię i nazwisko" required>
     </p>
+    <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="twoj@email.com" required>
+    </p>
+    <p>
+        <label for="telefon">Numer telefonu:</label><br>
+        <input type="tel" id="telefon" name="telefon" placeholder="123456789"
+               pattern="[0-9]{9}">
+    </p>
+    <p>
+        <label for="data">Data urodzenia:</label><br>
+        <input type="date" id="data" name="data">
+    </p>
+    <p>
+        <label for="kolor">Ulubiony kolor:</label><br>
+        <input type="color" id="kolor" name="kolor">
+    </p>
+    <p>
+        <label for="wiek">Wiek:</label><br>
+        <input type="number" id="wiek" name="wiek" min="13" max="100">
+    </p>
+    <p>
+        <label>Płeć:</label><br>
+        <input type="radio" id="mezczyzna" name="plec" value="M">
+        <label for="mezczyzna">Mężczyzna</label><br>
 
+        <input type="radio" id="kobieta" name="plec" value="K">
+        <label for="kobieta">Kobieta</label>
+    </p>
+    <p>
+        <label>Zainteresowania:</label><br>
+        <input type="checkbox" id="sport" name="zainteresowania">
+        <label for="sport">Sport</label><br>
+
+        <input type="checkbox" id="gry" name="zainteresowania">
+        <label for="gry">Gry</label><br>
+
+        <input type="checkbox" id="muzyka" name="zainteresowania">
+        <label for="muzyka">Muzyka</label><br>
+
+        <input type="checkbox" id="programowanie" name="zainteresowania">
+        <label for="programowanie">Programowanie</label>
+    </p>
+    <p>
+        <label for="kraj">Kraj:</label><br>
+        <select id="kraj" name="kraj">
+            <option value="pl">Polska</option>
+            <option value="de">Niemcy</option>
+            <option value="uk">Wielka Brytania</option>
+            <option value="us">USA</option>
+        </select>
+    </p>
+    <p>
+        <label for="wiadomosc">Wiadomość:</label><br>
+        <textarea id="wiadomosc" name="wiadomosc" rows="5" cols="30"
+         placeholder="Napisz coś..."></textarea>
+    </p>
+    <p>
+        <button type="submit">Wyślij</button>
+    </p>
+</form>
     <p>
         <a href="index.html">Powrót do strony głównej</a>
     </p>
 </main>
-
 <footer>
     <p>2026</p>
 </footer>
-
 </body>
 </html>
